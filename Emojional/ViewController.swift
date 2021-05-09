@@ -35,8 +35,6 @@ class ViewController: UIViewController {
        
         alertController.addAction(UIAlertAction(title: "Got it!", style: UIAlertAction.Style.default, handler: nil))
         
-        alertController.view.layer.cornerRadius = 80
-        
         alertController.view.tintColor = colors[Int.random(in: 0..<colors.count)]
        
         present(alertController, animated: true, completion: nil)
