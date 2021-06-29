@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -40,5 +39,9 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func backTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
